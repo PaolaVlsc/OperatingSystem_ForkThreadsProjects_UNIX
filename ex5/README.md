@@ -86,12 +86,12 @@ To compile and run the program, follow these steps:
 1. Compile the program using the following command:
 
    ```bash
-   gcc -o max_value_finder max_value_finder.c -lpthread
+   gcc -o a ask02.c -lpthread
    ```
 
 2. Run
    ```bash
-   ./max_value_finder
+   ./a
    ```
    The program will execute and display the maximum value found within the matrix.
 
@@ -105,3 +105,143 @@ Enjoy experimenting with thread synchronization in this simple multi-threaded ex
 ## Results
 
 Below are snapshots from the terminal during different code executions. In the first execution, all calculations were printed for debugging purposes. In the second execution, these were removed to make the results more understandable.
+
+Run no.1 
+```shell
+velasco@DESKTOP-A3QHN88:/mnt/d/Velasco/UniWA/UniWA_3rd_year/UniWa_6th_semester/Λειτουργικά 
+Συστήματα ΙΙ/Ergasia2$ gcc -o a ask02.c -lpthread
+velasco@DESKTOP-A3QHN88:/mnt/d/Velasco/UniWA/UniWA_3rd_year/UniWa_6th_semester/Λειτουργικά 
+Συστήματα ΙΙ/Ergasia2$ ./a
+Give length of array A: 4
+Give number of threads: 2
+Give numbers for mainArrayA
+mainArrayA[0][0]: 1
+mainArrayA[0][1]: 2
+mainArrayA[0][2]: 3
+mainArrayA[0][3]: 4
+mainArrayA[1][0]: 5
+mainArrayA[1][1]: 6
+mainArrayA[1][2]: 7
+mainArrayA[1][3]: 8
+mainArrayA[2][0]: 9
+mainArrayA[2][1]: 10
+mainArrayA[2][2]: 11
+mainArrayA[2][3]: 12
+mainArrayA[3][0]: 13
+mainArrayA[3][1]: 14
+mainArrayA[3][2]: 15
+mainArrayA[3][3]: 16
+Contents of array A
+mainArrayA[0][0] = 1
+mainArrayA[0][1] = 2
+mainArrayA[0][2] = 3
+mainArrayA[0][3] = 4
+mainArrayA[1][0] = 5
+mainArrayA[1][1] = 6
+mainArrayA[1][2] = 7
+mainArrayA[1][3] = 8
+mainArrayA[2][0] = 9
+mainArrayA[2][1] = 10
+mainArrayA[2][2] = 11
+mainArrayA[2][3] = 12
+mainArrayA[3][0] = 13
+mainArrayA[3][1] = 14
+mainArrayA[3][2] = 15
+mainArrayA[3][3] = 16
+Hello, I am thread 1 (not a real thread ID)
+Value of lines assigned to me = 2
+My job to look for the max number will start at A[0][0]
+mainArrayA[0][0] = 1
+mainArrayA[0][1] = 2
+mainArrayA[0][2] = 3
+mainArrayA[0][3] = 4
+mainArrayA[1][0] = 5
+mainArrayA[1][1] = 6
+mainArrayA[1][2] = 7
+mainArrayA[1][3] = 8
+Local max = 8
+Hello, I am thread 2 (not a real thread ID)
+Value of lines assigned to me = 2
+My job to look for the max number will start at A[2][0]
+mainArrayA[2][0] = 9
+mainArrayA[2][1] = 10
+mainArrayA[2][2] = 11
+mainArrayA[2][3] = 12
+mainArrayA[3][0] = 13
+mainArrayA[3][1] = 14
+mainArrayA[3][2] = 15
+mainArrayA[3][3] = 16
+Local max = 16
+Back to the main thread
+Maximum value in the array = 16
+Contents of array D
+arrayD[0][0] = 15
+arrayD[0][1] = 14
+arrayD[0][2] = 13
+arrayD[0][3] = 12
+arrayD[1][0] = 11
+arrayD[1][1] = 10
+arrayD[1][2] = 9
+arrayD[1][3] = 8
+arrayD[2][0] = 7
+arrayD[2][1] = 6
+arrayD[2][2] = 5
+arrayD[2][3] = 4
+arrayD[3][0] = 3
+arrayD[3][1] = 2
+arrayD[3][2] = 1
+arrayD[3][3] = 0
+In the main: Finish and Exit
+```
+
+Run no.2
+```shell
+velasco@DESKTOPA3QHN88:/mnt/d/Velasco/UniWA/UniWA_3rd_year/UniWa_6th_semester/Λειτουργικά 
+Συστήματα ΙΙ/Ergasia2$ ./a
+Give length of array A: 4
+Give number of threads: 2
+Give numbers for mainArrayA
+mainArrayA[0][0]: 34
+mainArrayA[0][1]: 56
+mainArrayA[0][2]: 324
+mainArrayA[0][3]: 234
+mainArrayA[1][0]: 234
+mainArrayA[1][1]: 656453
+mainArrayA[1][2]: 43
+mainArrayA[1][3]: 243
+mainArrayA[2][0]: 234
+mainArrayA[2][1]: 523
+mainArrayA[2][2]: 465
+mainArrayA[2][3]: 42
+mainArrayA[3][0]: 341
+mainArrayA[3][1]: 2345
+mainArrayA[3][2]: 246
+mainArrayA[3][3]: 426
+Hello I am thread 1 (not real thread id)
+Local max = 656453
+Hello I am thread 2 (not real thread id)
+Local max = 2345
+Back to main thread
+Maximum value in array = 656453
+Contents of array D
+arrayD[0][0] = 656419
+arrayD[0][1] = 656397
+arrayD[0][2] = 656129
+arrayD[0][3] = 656219
+arrayD[1][0] = 656219
+arrayD[1][1] = 0
+arrayD[1][2] = 656410
+arrayD[1][3] = 656210
+arrayD[2][0] = 656219
+arrayD[2][1] = 655930
+arrayD[2][2] = 655988
+arrayD[2][3] = 656411
+arrayD[3][0] = 656112
+arrayD[3][1] = 654108
+arrayD[3][2] = 656207
+arrayD[3][3] = 656027
+In main: Finish and Exit
+
+```
+
+
