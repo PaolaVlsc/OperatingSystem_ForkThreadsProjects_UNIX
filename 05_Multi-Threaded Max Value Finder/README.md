@@ -1,6 +1,6 @@
 # Multi-Threaded Max Value Finder
 
-This C program showcases multi-threading using pthreads and demonstrates how to find the maximum value within a matrix. It synchronizes threads, calculates local maximum values, and then determines the global maximum. This code was created by ΒΕΛΑΣΚΟ ΠΑΟΛΑ (cs161020) as part of a task for the 2020/21 Laboratory of Computer and Informatics Engineering at the School of Engineering, University of Patras, under the guidance of Professor ΜΑΜΑΛΗΣ ΒΑΣΙΛΕΙΟΣ and Professor ΙΟΡΔΑΝΑΚΗΣ ΜΙΧΑΛΗΣ.
+This C program showcases multi-threading using pthreads and demonstrates how to find the maximum value within a matrix. It synchronizes threads, calculates local maximum values, and then determines the global maximum.
 
 ## Table of Contents
 
@@ -106,11 +106,12 @@ Enjoy experimenting with thread synchronization in this simple multi-threaded ex
 
 Below are snapshots from the terminal during different code executions. In the first execution, all calculations were printed for debugging purposes. In the second execution, these were removed to make the results more understandable.
 
-Run no.1 
+Run no.1
+
 ```shell
-velasco@DESKTOP-A3QHN88:/mnt/d/Velasco/UniWA/UniWA_3rd_year/UniWa_6th_semester/Λειτουργικά 
+velasco@DESKTOP-A3QHN88:/mnt/d/Velasco/UniWA/UniWA_3rd_year/UniWa_6th_semester/Λειτουργικά
 Συστήματα ΙΙ/Ergasia2$ gcc -o a ask02.c -lpthread
-velasco@DESKTOP-A3QHN88:/mnt/d/Velasco/UniWA/UniWA_3rd_year/UniWa_6th_semester/Λειτουργικά 
+velasco@DESKTOP-A3QHN88:/mnt/d/Velasco/UniWA/UniWA_3rd_year/UniWa_6th_semester/Λειτουργικά
 Συστήματα ΙΙ/Ergasia2$ ./a
 Give length of array A: 4
 Give number of threads: 2
@@ -195,8 +196,9 @@ In the main: Finish and Exit
 ```
 
 Run no.2
+
 ```shell
-velasco@DESKTOPA3QHN88:/mnt/d/Velasco/UniWA/UniWA_3rd_year/UniWa_6th_semester/Λειτουργικά 
+velasco@DESKTOPA3QHN88:/mnt/d/Velasco/UniWA/UniWA_3rd_year/UniWa_6th_semester/Λειτουργικά
 Συστήματα ΙΙ/Ergasia2$ ./a
 Give length of array A: 4
 Give number of threads: 2
@@ -243,5 +245,3 @@ arrayD[3][3] = 656027
 In main: Finish and Exit
 
 ```
-
-
