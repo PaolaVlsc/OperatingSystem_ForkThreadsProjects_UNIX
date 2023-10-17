@@ -57,8 +57,6 @@ To compile and run the program, follow these steps:
    gcc -o a ask01.c -lpthread
    ```
 
-````
-
 2. Run the compiled program:
 
    ```bash
@@ -78,9 +76,8 @@ Enjoy experimenting with threads and semaphores in this simple multi-threading e
 Notes:
 We observe that they are indeed executed in the order analyzed above, and there are no random executions or sequences. We can see that <one><two><three> were printed in sequence 15 times.
 
-```
-
-
 
 ## Results
-````
+
+![image](https://github.com/PaolaVlsc/OperatingSystem_ForkThreadsProjects_LINUX/assets/87998374/6611ba8a-456d-49c1-8069-4bd4cec6ef33)
+
