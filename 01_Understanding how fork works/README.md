@@ -1,3 +1,5 @@
+# Understanding how fork works 
+
 ```bash
 pid1=fork();
 if (pid1!=0)
@@ -16,6 +18,13 @@ else
 ```
 
 The hierarchy between processes
+
+![image](https://github.com/PaolaVlsc/OperatingSystem_ForkThreadsProjects_LINUX/assets/87998374/5ba6a601-91c9-47c8-98b1-a12bf40cad88)
+
+
+
+
+
 
 • The initial process is P0.
 • On line 1, P0 calls fork(), creating a child process, P1.
