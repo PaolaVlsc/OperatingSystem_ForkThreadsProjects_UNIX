@@ -13,6 +13,7 @@ A simple C program that demonstrates process creation using `fork()` and inter-p
   - [Prerequisites](#prerequisites)
   - [Run](#run)
 - [Author](#author)
+- [Results](#results)
 
 ## Introduction
 
@@ -66,3 +67,13 @@ gcc -o cs161020_askisi02 cs161020_askisi02.c
 ## Author
 
 This code was written by Velasco Paola
+
+Notes: 
+From the PID and PPID, we can see that P1 and P2 are the children of P0, while P3, P4, and P5 are the children of P2. Additionally, we observe that the execution order of the main part of each process is correct.
+
+## Results 
+![image](https://github.com/PaolaVlsc/OperatingSystem_ForkThreadsProjects_LINUX/assets/87998374/f060ad35-ae61-4932-9ee2-cf64869669ab)
+![image](https://github.com/PaolaVlsc/OperatingSystem_ForkThreadsProjects_LINUX/assets/87998374/4cfe95e1-4342-4fda-a877-71410bd0399e)
+![image](https://github.com/PaolaVlsc/OperatingSystem_ForkThreadsProjects_LINUX/assets/87998374/ea799c61-f95b-4b7a-b78f-c9d528b0594a)
+![image](https://github.com/PaolaVlsc/OperatingSystem_ForkThreadsProjects_LINUX/assets/87998374/2fd689a2-26bb-457d-b0f9-741bc58891a9)
+
